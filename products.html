@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopZone | Products</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopZone</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <input type="search" id="product-search" placeholder="Search products..." />
+    <section>
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        <article>
+          <img src="assets/images/1.PNG" alt="product A" />
+          <h3>product A </h3>
+          <p>6000 rwf</p>
+          <button onclick="addToCart(this)"
+  data-name="product A"
+  data-price="6000 rwf"
+  data-img="assets/images/1.PNG">Add to Cart</button>
+        </article>
+        <article>
+          <img src="assets/images/2.PNG" alt="Product B" />
+          <h3>Product B</h3>
+          <p>14000 rwf</p>
+          <button onclick="addToCart(this)"
+  data-name="Product B"
+  data-price="14000 rwf"
+  data-img="assets/images/2.PNG">Add to Cart</button>
+        </article>
+        <article>
+            <img src="assets/images/3.PNG" alt="Product C" />
+            <h3>Product C</h3>
+            <p>17000 rwf</p>
+            <button onclick="addToCart(this)"
+  data-name="Product C"
+  data-price="17000 rwf"
+  data-img="assets/images/3.PNG">Add to Cart</button>
+          </article>
+          <article>
+            <img src="assets/images/4.PNG" alt="Product D" />
+            <h3>Product D</h3>
+            <p>20000 rwf </p>
+            <button onclick="addToCart(this)"
+  data-name="Product D"
+  data-price="20000 rwf"
+  data-img="assets/images/4.PNG">Add to Cart</button>
+          </article>
+          <article>
+            <img src="assets/images/5.PNG" alt="Product E" />
+            <h3>Product E</h3>
+            <p>13000 rwf</p>
+            <button onclick="addToCart(this)"
+  data-name="Product D"
+  data-price="13000 rwf"
+  data-img="assets/images/5.PNG">Add to Cart</button>
+          </article>
+          <article>
+            <img src="assets/images/6.PNG" alt="Product F" />
+            <h3>Product F</h3>
+            <p>7000 rwf</p>
+            <button onclick="addToCart(this)"
+  data-name="Product F"
+  data-price="7000 rwf"
+  data-img="assets/images/6.PNG">Add to Cart</button>
+          </article>
+          <article>
+            <img src="assets/images/7.PNG" alt="Product G" />
+            <h3>Product G</h3>
+            <p>12000 rwf</p>
+            <button onclick="addToCart(this)"
+  data-name="Product G"
+  data-price="12000 rwf"
+  data-img="assets/images/7.PNG">Add to Cart</button>
+          </article>
+          <article>
+            <img src="assets/images/8.PNG" alt="Product H" />
+            <h3>Product H</h3>
+            <p>10000 rwf</p>
+            <button onclick="addToCart(this)"
+  data-name="Product H"
+  data-price="10000 rwf"
+  data-img="assets/images/8.PNG">Add to Cart</button>
+          </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShopZone</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

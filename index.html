@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopZone | Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>ShopZone</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to ShopZone!</h2>
+      <p>Find the best shoes here.</p>
+    </section>
+
+   <section class="carousel3-container">
+    <button class="arrow left" onclick="rotateCarouselBackward()">&#9664;</button>
+  <div class="carousel3" id="carousel3">
+    <div class="carousel-item">
+      <img src="assets/images/1.PNG" alt="Product A" />
+      <h4>Product A</h4>
+      <p>6000 rwf</p>   
+      <button onclick="addToCart(this)" 
+              data-name="Product A" 
+              data-price="6000 rwf" 
+              data-img="assets/images/1.PNG">Add to Cart</button>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/2.PNG" alt="Product B" />
+      <h4>Product B</h4>
+      <p>14000 rwf</p>
+      <button onclick="addToCart(this)" 
+              data-name="Product B" 
+              data-price="14000 rwf" 
+              data-img="assets/images/2.PNG">Add to Cart</button>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/3.PNG" alt="Product C" />
+      <h4>Product C</h4>
+      <p>17000 rwf</p>
+      <button onclick="addToCart(this)" 
+              data-name="Product C" 
+              data-price="17000 rwf" 
+              data-img="assets/images/3.PNG">Add to Cart</button>
+    </div>
+    <div class="carousel-item">
+      <img src="assets/images/4.PNG" alt="Product D" />
+      <h4>Product D</h4>
+      <p>20000 rwf</p>
+      <button onclick="addToCart(this)" 
+              data-name="Product D" 
+              data-price="20000 rwf" 
+              data-img="assets/images/3.PNG">Add to Cart</button>
+    </div>
+  </div>
+  <button class="arrow right" onclick="rotateCarouselForward()">&#9654;</button>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ShopZone</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
